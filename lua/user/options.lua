@@ -342,3 +342,4 @@ vim.opt.wrap = true -- long lines wrap and continue on the next line
 -- vim.opt.writeany                                             -- write to file with no need for "!" override
 vim.opt.writebackup = false -- make a backup before overwriting a file
 -- vim.opt.writedelay                                           -- delay this many msec for each char (for debug)
+lvim.transparent_window = true

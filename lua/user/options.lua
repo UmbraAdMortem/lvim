@@ -247,8 +247,8 @@ vim.opt.scrolloff = 8 -- minimum nr. of lines above and below cursor
 -- vim.opt.shellxescape                                         -- characters to escape when 'shellxquote' is (
 -- vim.opt.shellxquote                                          -- like 'shellquote', but include redirection
 -- vim.opt.shiftround                                           -- round indent to multiple of shiftwidthk
-vim.opt.shiftwidth = 2                             -- number of spaces to use for (auto)indent step
-vim.opt.shortmess.c = true                         -- list of flags, reduce length of messages
+vim.opt.shiftwidth = 2     -- number of spaces to use for (auto)indent step
+vim.opt.shortmess.c = true -- list of flags, reduce length of messages
 -- vim.opt.showbreak                                            -- string to use at the start of wrapped lines
 -- vim.opt.showcmd                                              -- show (partial) command in status line
 -- vim.opt.showfulltag                                          -- show full tag pattern when completing tag

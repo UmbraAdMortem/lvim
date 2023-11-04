@@ -1,5 +1,6 @@
 require("user.options")
 require("user.keymappings")
+require("user.snippets")
 reload("user.plugins")
 
 lvim.colorscheme = "gruvbox-baby"

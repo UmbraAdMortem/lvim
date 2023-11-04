@@ -1,0 +1,10 @@
+{
+  "test css linkage": {
+    "prefix": "test-css",
+    "body": [
+      "body {",
+      "  background-color: red;",
+      "}"
+    ]
+  }
+}

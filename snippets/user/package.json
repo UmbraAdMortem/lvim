@@ -1,0 +1,26 @@
+{
+  "name": "user-snippets",
+  "author": "Raphael Gstettenhofer",
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./html.json"
+      },
+      {
+        "language": "css",
+        "path": "./css.json"
+      }
+      {
+        "language": [
+          "javascript",
+          "javascriptreact"
+        ],
+        "path": "./javascript.json"
+      }
+    ]
+  }
+}

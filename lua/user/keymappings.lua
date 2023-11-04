@@ -1,7 +1,7 @@
 -- Quick Options - change options quickly
 lvim.builtin.which_key.mappings["o"] = {
   name = "Quick Options",
-  n = { "<cmd>setlocal relativenumber!<cr>", "Toggle relative line numbers"},
+  n = { "<cmd>setlocal relativenumber!<cr>", "Toggle relative line numbers" },
 }
 
 -- Quickly exit insert mode
@@ -21,4 +21,3 @@ lvim.keys.visual_mode["<C-S>"] = ":wa<cr>"
 lvim.keys.visual_block_mode["<C-S>"] = ":wa<cr>"
 lvim.keys.term_mode["<C-S>"] = ":wa<cr>"
 lvim.keys.command_mode["<C-S>"] = ":wa<cr>"
-

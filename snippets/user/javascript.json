@@ -1,6 +1,6 @@
 {
   "test JavaScript execution": {
-    "prefix": "testjs",
+    "prefix": "test-js",
     "body": "alert(\"JavaScript is being executed\");",
     "description": "test JavaScript execution"
   }

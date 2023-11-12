@@ -10,7 +10,7 @@
     "description": "Add Bootstrap JavaScript"
   },
   "link CSS file": {
-    "prefix": "css-bootstrap-link",
+    "prefix": "css-link",
     "body": "<link href=\"${1:file}\" rel=\"stylesheet\">",
     "description": "Adds link to CSS file"
   },

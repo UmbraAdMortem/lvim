@@ -21,3 +21,4 @@ lvim.keys.visual_mode["<C-S>"] = ":wa<cr>"
 lvim.keys.visual_block_mode["<C-S>"] = ":wa<cr>"
 lvim.keys.term_mode["<C-S>"] = ":wa<cr>"
 lvim.keys.command_mode["<C-S>"] = ":wa<cr>"
+

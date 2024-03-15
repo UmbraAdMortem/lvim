@@ -1,3 +1,5 @@
+lvim.colorscheme = "gruvbox-baby"
+
 -- vim.opt.aleph                                                -- ASCII code of the letter Aleph (Hebrew)
 -- vim.opt.allowrevins                                          -- allow CTRL-_ in Insert and Command-line mode
 -- vim.opt.ambiwidth                                            -- what to do with Unicode chars of ambiguous width
@@ -82,13 +84,13 @@ vim.opt.cursorline = true -- highlight the screen line of the cursor
 -- vim.opt.eventignore                                          -- autocommand events that are ignored
 vim.opt.expandtab = true       -- use spaces when <Tab> is inserted
 -- vim.opt.exrc                                                 -- read .nvimrc and .exrc in the current directory
-vim.opt.fileencoding = "utf-8" -- file encoding for multibyte text
+vim.opt.fileencoding = "utf-8"                                  -- file encoding for multibyte text
 -- vim.opt.fileencodings                                        -- automatically detected character encodings
 -- vim.opt.fileformat                                           -- file format used for file I/O
 -- vim.opt.fileformats                                          -- automatically detected values for 'fileformat'
--- vim.opt.fileignorecase                                       -- ignore case when using file names
+vim.opt.fileignorecase = true                                   -- ignore case when using file names
 -- vim.opt.filetype                                             -- type of file, used for autocommands
--- vim.opt.fillchars                                            -- characters to use for displaying special items
+vim.opt.fillchars = vim.opt.fillchars + "eob: "                 -- characters to use for displaying special items
 -- vim.opt.fixendofline                                         -- make sure last line in file has <EOL>
 -- vim.opt.foldclose                                            -- close a fold when the cursor leaves it
 -- vim.opt.foldcolumn                                           -- width of the column used to indicate folds
@@ -150,7 +152,7 @@ vim.opt.iskeyword:append("-") -- characters included in keywords
 -- vim.opt.langmap                                              -- alphabetic characters for other language mode
 -- vim.opt.langmenu                                             -- language to be used for the menus
 -- vim.opt.langremap                                            -- do apply 'langmap' to mapped characters
--- vim.opt.laststatus                                           -- tells when last window has status lines
+vim.opt.laststatus = 3                                          -- tells when last window has status lines
 -- vim.opt.lazyredraw                                           -- don't redraw while executing macros
 -- vim.opt.linebreak                                            -- wrap long lines at a blank
 -- vim.opt.lines                                                -- number of lines in the display
@@ -250,7 +252,7 @@ vim.opt.scrolloff = 8 -- minimum nr. of lines above and below cursor
 vim.opt.shiftwidth = 2     -- number of spaces to use for (auto)indent step
 vim.opt.shortmess.c = true -- list of flags, reduce length of messages
 -- vim.opt.showbreak                                            -- string to use at the start of wrapped lines
--- vim.opt.showcmd                                              -- show (partial) command in status line
+vim.opt.showcmd = false                                         -- show (partial) command in status line
 -- vim.opt.showfulltag                                          -- show full tag pattern when completing tag
 -- vim.opt.showmatch                                            -- briefly jump to matching bracket if insert one
 vim.opt.showmode = true    -- message on status line to show current mode
@@ -296,9 +298,9 @@ vim.opt.termguicolors = true -- set term gui colors (most terminals support this
 -- vim.opt.tildeop                                              -- tilde command "~" behaves like an operator
 -- vim.opt.timeout                                              -- time out on mappings and key codes
 vim.opt.timeoutlen = 1000 -- time out time in milliseconds
--- vim.opt.title                                                -- let Vim set the title of the window
+vim.opt.title = true                                            -- let Vim set the title of the window
 -- vim.opt.titlelen                                             -- percentage of 'columns' used for window title
--- vim.opt.titleold                                             -- old title, restored when exiting
+vim.opt.titleold = vim.split(os.getenv("SHELL") or "", "/")[3]  -- old title, restored when exiting
 -- vim.opt.titlestring                                          -- string to use for the Vim window title
 -- vim.opt.ttimeout                                             -- time out on mappings
 -- vim.opt.ttimeoutlen                                          -- time out time for key codes in milliseconds

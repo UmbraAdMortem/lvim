@@ -1,5 +1,42 @@
 lvim.plugins = {
-  -- {"Shatur/neovim-tasks"},
   -- colorscheme
   { "luisiacc/gruvbox-baby" },
+  -- "roobert/tailwindcss-colorizer-cmp.nvim", -- color chooser
+  -- utilities
+  -- {
+  --   "mawkler/modicator.nvim",
+  --   event = "ColorScheme",
+  -- }, -- Indicator mod
+  -- "folke/todo-comments.nvim",
+  -- "f-person/git-blame.nvim",
+  -- "kevinhwang91/nvim-bqf",     -- QuickFix improvments
+  -- "petertriho/nvim-scrollbar", -- highlighting on scrollbar
+  -- "folke/zen-mode.nvim",
+  -- {
+  --   "lvimuser/lsp-inlayhints.nvim",
+  --   branch = "anticonceal",
+  -- },
+  -- "hiphish/rainbow-delimiters.nvim", -- rainbow delimiters (paranthesses)
+  -- "andymass/vim-matchup",            -- Jump between matching chars or words
+  -- "nvim-treesitter/nvim-treesitter-textobjects",
+  -- "windwp/nvim-ts-autotag",
+  -- "kylechui/nvim-surround",
+  -- "NvChad/nvim-colorizer.lua", -- color chooser
+  -- "moll/vim-bbye", -- buffer closer
+  -- improved movment
+  -- "stevearc/dressing.nvim",          -- selection and input inprovment
+  -- "nacro90/numb.nvim",               -- go to line previewer
+  -- "opalmay/vim-smoothie",
+  -- "kylechui/nvim-surround",
+  -- {
+  --   "jinh0/eyeliner.nvim",
+  --   config = function()
+  --     require("eyeliner").setup {
+  --       highlight_on_key = true,
+  --     }
+  --   end,
+  -- }, -- advanced jump in line (F/f)
+  -- task runners
+  -- {"Shatur/neovim-tasks"},
+  -- { "is0n/jaq-nvim" }, -- Just Another Quickrun plugin
 }

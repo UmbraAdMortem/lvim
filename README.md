@@ -6,3 +6,6 @@ Clone this repo to '~/.config/lvim'
 Execute install script 'install.sh' only once
 ```~/.config/lvim/install.sh```
 
+Execute update script 'update.sh' to install language dependent plugins
+```~/.config/lvim/update.sh```
+

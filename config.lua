@@ -7,3 +7,4 @@
 reload("user.treesitter")
 reload("user.options")
 reload("user.plugins")
+reload("user.keymaps")

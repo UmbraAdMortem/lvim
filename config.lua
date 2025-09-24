@@ -6,3 +6,4 @@
 
 reload("user.treesitter")
 reload("user.options")
+reload("user.plugins")

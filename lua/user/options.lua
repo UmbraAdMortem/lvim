@@ -1,4 +1,4 @@
--- lvim.colorscheme = "gruvbox-baby"
+lvim.colorscheme = "gruvbox-baby"
 
 -- vim.opt.aleph                                                -- ASCII code of the letter Aleph (Hebrew)
 -- vim.opt.allowrevins                                          -- allow CTRL-_ in Insert and Command-line mode

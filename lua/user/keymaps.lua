@@ -2,6 +2,7 @@
 lvim.builtin.which_key.mappings["o"] = {
   name = "Quick Options",
   n = { "<cmd>setlocal relativenumber!<cr>", "Toggle relative line numbers" },
+  w = { "<cmd>setlocal wrap!<cr>", "Toggle line wrap"},
 }
 
 -- Quickly exit insert mode

@@ -9,6 +9,7 @@ lvim.colorscheme = "gruvbox-baby"
 vim.opt.autoindent = true -- take indent for new line from previous line
 -- vim.opt.autoread                                             -- autom. read file when changed outside of Vim
 -- vim.opt.autowrite                                            -- automatically write file if changed
+--  
 -- vim.opt.autowriteall                                         -- as 'autowrite', but works with more commands
 vim.opt.background = "dark" -- "dark" or "light", used for highlight colors
 -- vim.opt.backspace                                            -- how backspace works at start of line
@@ -84,13 +85,13 @@ vim.opt.cursorline = true -- highlight the screen line of the cursor
 -- vim.opt.eventignore                                          -- autocommand events that are ignored
 vim.opt.expandtab = true       -- use spaces when <Tab> is inserted
 -- vim.opt.exrc                                                 -- read .nvimrc and .exrc in the current directory
-vim.opt.fileencoding = "utf-8"                                  -- file encoding for multibyte text
+vim.opt.fileencoding = "utf-8" -- file encoding for multibyte text
 -- vim.opt.fileencodings                                        -- automatically detected character encodings
 -- vim.opt.fileformat                                           -- file format used for file I/O
 -- vim.opt.fileformats                                          -- automatically detected values for 'fileformat'
-vim.opt.fileignorecase = true                                   -- ignore case when using file names
+vim.opt.fileignorecase = true                   -- ignore case when using file names
 -- vim.opt.filetype                                             -- type of file, used for autocommands
-vim.opt.fillchars = vim.opt.fillchars + "eob: "                 -- characters to use for displaying special items
+vim.opt.fillchars = vim.opt.fillchars + "eob: " -- characters to use for displaying special items
 -- vim.opt.fixendofline                                         -- make sure last line in file has <EOL>
 -- vim.opt.foldclose                                            -- close a fold when the cursor leaves it
 -- vim.opt.foldcolumn                                           -- width of the column used to indicate folds
@@ -107,7 +108,7 @@ vim.opt.fillchars = vim.opt.fillchars + "eob: "                 -- characters to
 -- vim.opt.foldtext                                             -- expression used to display for a closed fold
 -- vim.opt.formatexpr                                           -- expression used with "gq" command
 -- vim.opt.formatlistpat                                        -- pattern used to recognize a list header
-vim.opt.formatoptions:remove({ "c", "r", "o" }) -- don't insert the current comment leader automatically for auto-wrapping comments using 'textwidth', hitting <Enter> in insert mode, or hitting 'o' or 'O' in normal mode.
+vim.opt.formatoptions:remove("cro") -- don't insert the current comment leader automatically for auto-wrapping comments using 'textwidth', hitting <Enter> in insert mode, or hitting 'o' or 'O' in normal mode.
 -- vim.opt.formatprg                                            -- name of external program used with "gq" command
 -- vim.opt.fsync                                                -- whether to invoke fsync() after file write
 -- vim.opt.gdefault                                             -- the ":substitute" flag 'g' is default on
@@ -152,7 +153,7 @@ vim.opt.iskeyword:append("-") -- characters included in keywords
 -- vim.opt.langmap                                              -- alphabetic characters for other language mode
 -- vim.opt.langmenu                                             -- language to be used for the menus
 -- vim.opt.langremap                                            -- do apply 'langmap' to mapped characters
-vim.opt.laststatus = 3                                          -- tells when last window has status lines
+vim.opt.laststatus = 3 -- tells when last window has status lines
 -- vim.opt.lazyredraw                                           -- don't redraw while executing macros
 -- vim.opt.linebreak                                            -- wrap long lines at a blank
 -- vim.opt.lines                                                -- number of lines in the display
@@ -220,7 +221,7 @@ vim.opt.pumheight = 10 -- maximum height of the popup menu
 -- vim.opt.readonly                                             -- disallow writing the buffer
 -- vim.opt.redrawtime                                           -- timeout for 'hlsearch' and |:match| highlighting
 -- vim.opt.regexpengine                                                     regexp engine to use
-vim.opt.relativenumber = false -- show relative line number in front of each line
+vim.opt.relativenumber = true -- show relative line number in front of each line
 -- vim.opt.report                                               -- threshold for reporting nr. of lines changed
 -- vim.opt.revins                                               -- inserting characters will work backwards
 -- vim.opt.rightleft                                            -- window is right-to-left oriented
@@ -252,7 +253,7 @@ vim.opt.scrolloff = 8 -- minimum nr. of lines above and below cursor
 vim.opt.shiftwidth = 2     -- number of spaces to use for (auto)indent step
 vim.opt.shortmess.c = true -- list of flags, reduce length of messages
 -- vim.opt.showbreak                                            -- string to use at the start of wrapped lines
-vim.opt.showcmd = false                                         -- show (partial) command in status line
+vim.opt.showcmd = false    -- show (partial) command in status line
 -- vim.opt.showfulltag                                          -- show full tag pattern when completing tag
 -- vim.opt.showmatch                                            -- briefly jump to matching bracket if insert one
 vim.opt.showmode = true    -- message on status line to show current mode
@@ -297,10 +298,10 @@ vim.opt.termguicolors = true -- set term gui colors (most terminals support this
 -- vim.opt.thesaurusfunc                                        -- function to be used for thesaurus completion
 -- vim.opt.tildeop                                              -- tilde command "~" behaves like an operator
 -- vim.opt.timeout                                              -- time out on mappings and key codes
-vim.opt.timeoutlen = 1000 -- time out time in milliseconds
-vim.opt.title = true                                            -- let Vim set the title of the window
+vim.opt.timeoutlen = 1000                                      -- time out time in milliseconds
+vim.opt.title = true                                           -- let Vim set the title of the window
 -- vim.opt.titlelen                                             -- percentage of 'columns' used for window title
-vim.opt.titleold = vim.split(os.getenv("SHELL") or "", "/")[3]  -- old title, restored when exiting
+vim.opt.titleold = vim.split(os.getenv("SHELL") or "", "/")[3] -- old title, restored when exiting
 -- vim.opt.titlestring                                          -- string to use for the Vim window title
 -- vim.opt.ttimeout                                             -- time out on mappings
 -- vim.opt.ttimeoutlen                                          -- time out time for key codes in milliseconds
@@ -337,7 +338,7 @@ vim.opt.whichwrap:append("<>[]hl") -- allow specified keys to cross line boundar
 -- vim.opt.winminheight                                         -- minimum number of lines for any window
 -- vim.opt.winminwidth                                          -- minimal number of columns for any window
 -- vim.opt.winwidth                                             -- minimal number of columns for current window
-vim.opt.wrap = true -- long lines wrap and continue on the next line
+vim.opt.wrap = false -- long lines wrap and continue on the next line
 -- vim.opt.wrapmargin                                           -- chars from the right where wrapping starts
 -- vim.opt.wrapscan                                             -- searches wrap around the end of the file
 -- vim.opt.write                                                -- writing to a file is allowed
